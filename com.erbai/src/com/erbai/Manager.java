@@ -43,4 +43,9 @@ public class Manager {
         this.subjectLife = subjectLife;
     }
 
+    public String info() {
+        String str = "专业信息如下:\n专业名称：" + this.getSubjectName() + "\n专业编号" + this.getSubjectNo() + "\n学制" + this.getSubjectLife();
+        return str;
+    }
+
 }
