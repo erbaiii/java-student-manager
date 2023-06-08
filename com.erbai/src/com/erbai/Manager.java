@@ -4,13 +4,18 @@ public class Manager {
     private String subjectName;
     private String subjectNo;
     private int subjectLife;
-    public Manager(){
+
+    public Manager() {
 
     }
-    public Manager(String subjectName,String subjectNo, int subjectLife){
-        this.subjectName = subjectName;
-        this.subjectNo = subjectNo;
-        this.subjectLife = subjectLife;
+
+    public Manager(String subjectName, String subjectNo, int subjectLife) {
+//        this.subjectName = subjectName;
+//        this.subjectNo = subjectNo;
+//        this.subjectLife = subjectLife;
+        this.setSubjectName(subjectName);
+        this.setSubjectNo(subjectNo);
+        this.setSubjectLife(subjectLife);
     }
 
     public String getSubjectName() {
@@ -34,6 +39,7 @@ public class Manager {
     }
 
     public void setSubjectLife(int subjectLife) {
+        if (subjectLife <= 0) return;
         this.subjectLife = subjectLife;
     }
 

@@ -1,5 +1,9 @@
+import com.erbai.Manager;
+
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        Manager manager = new Manager("二白","S01",18);
+        System.out.println(manager.getSubjectLife()+manager.getSubjectNo()+manager.getSubjectName());
     }
 }
